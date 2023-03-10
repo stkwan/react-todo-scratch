@@ -100,6 +100,6 @@ function TodoItems() {
 
 const TODOS = Promise.resolve(JSON.stringify([
   {id: 1234, title: 'Groceries', description: 'Milk, eggs, bread', date: new Date(2023, 2, 23), completed: true},
-  {id: 2345, title: 'Wash Car', description: 'Brown Bear Car Wash', date: Date.now(), completed: false},
+  {id: 2345, title: 'Wash Car', description: 'Brown Bear Car Wash', date: Date.now(), completed: true},
   {id: 3456, title: 'Homework', descripotion: 'Todo app', date: Date.now(), completed: false}, 
 ]));
