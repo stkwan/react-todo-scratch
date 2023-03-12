@@ -1,22 +1,25 @@
 li {
-  color: white;
   list-style-type: none;
   font-size: 18px;
-  border: 1px solid gray;
   border-radius: 20px;
   text-align: center;
   margin: 20px;
+  width: 110px;
   padding: 5px;
-  width: 130px;
-  left: 15px;
-  position: absolute;
   background-color: rgb(162, 6, 162);
 }
 
-li:hover {
-  background-color: rgb(181, 51, 181);
+a {
   color: white;
-  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a[href='/create'] {
+  color:rgb(162, 6, 162);
 }
 
 label {
@@ -33,7 +36,7 @@ label {
   background-color: lightblue;
 }
 
-#main {
+main {
   color: rgb(162, 6, 162);
   height: 100%;
   width: 100%;
@@ -44,6 +47,27 @@ label {
   padding-top: 50px;
 }
 
+form {
+  display: table;
+}
+
+p {
+  display: table-row;
+}
+
+label.userForm {
+  display: table-cell;
+  vertical-align: top;
+  text-align: right;
+}
+
+input.userForm,
+textarea.userForm,
+button.saveTodo {
+  display: table-cell;
+  margin-left: 20px;
+}
+
 #todoList {
   padding: 10px;
 }
@@ -51,9 +75,24 @@ label {
 .todoItem {
   padding: 5px;
   margin: 5px;
+  border: 1px solid gray;
+  width: 300px;
 }
 
 .checked {
   color: gray;
   text-decoration: line-through;
+}
+
+.updateTodo:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.navText {
+  color: green;
+}
+
+.deleteButton {
+  float: right;
 }
